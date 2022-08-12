@@ -1,0 +1,187 @@
+.TH man 3 "12 AUGUST 2022" "0.01" "_print.c man page"
+
+.SH NAME
+
+.B _PRINTF
+
+- A customprintf function
+
+.SH SYNOPSIS
+
+.B % [FLAGS] [WIDTH] [-PRECISION] [LENGTH] TYPE
+
+.SH DESCRIPTION
+
+_printf function prints arguments according to a format, flag, width or precision.
+
+.SH FORMAT CHARACTERS
+
+.RS 3
+
+Use the following key characters preceeded by % symbol:
+
+.RS 0
+
+.B %c
+
+Print character
+
+.RS 0
+
+.B %s
+
+Print string
+
+.RS 0
+
+.B %d
+
+Format and print numbers in decimal of data type int
+
+.RS 0
+
+.B %i
+
+Format and print numbers in decimal of data type int
+
+.RS 0
+
+.B %u
+
+Format and print numbers in decimal of data type unsigned int
+
+.RS 0
+
+.B %b
+
+Format and print numbers in binary
+
+.RS 0
+
+.B %o
+
+Format and print numbers in octal
+
+.RS 0
+
+.B %x
+
+Format and print numbers in hexadecimal in lowercase
+
+.RS 0
+
+.B %X
+
+Format and print numbers in hexadecimal in uppercase
+
+.RS 0
+
+.B %r
+
+Format and print string in reverse
+
+.RS 0
+
+.B %R
+
+Format and print string in ROT13
+
+.RS 0
+
+.B %S
+
+Format and print string replacing non printable characters (0 < ASCII value < 32 or >= 127) with \x, followed by the ASCII code in hexadecimal(uppercase, 2 characters)
+
+.SH FLAG CHARACTERS
+
+.RS 3
+
+Use the following characters preceeded by % symbol, before the format character:
+
+.RS 0
+
+.B #
+
+Inserts prefix depending on formatter
+
+.RS 3
+
+.B o -
+
+Prefix 0
+
+.RS 0
+
+.B x -
+
+Prefix 0x
+
+.RS 0
+
+.B X -
+
+Prefix 0X
+
+.RS -3
+
+.B -
+
+Left justify
+
+.RS 0
+
+.B +
+
+Displays sign of number
+
+.RS 0
+
+.B 0
+
+Field is padded with 0's
+
+.RS -4
+
+.B blank
+
+Positive number begins with blank
+
+.SH FIELD WIDTH
+
+To print a number with a certain (minimum) field width, include a number the represent the number of spaces wide. The field option counts the negative sign as a space. (e.g. %5d prints a number in decimal with minimum field width of 5 spaces)
+
+.SH PRECISION
+
+To print a with a certain precision, include a number after a '.' to represent the minimum number of digits for
+
+.B d,
+
+.B i,
+
+.B o,
+
+.B u,
+
+.B x,
+
+and
+
+.B X
+
+formatters. The number represents the minimum number of characters to be printed from a string for s and S conversions.
+
+.SH RETURN VALUES
+
+The _printf function returns an integer representing the number of characters printed.
+
+.SH SEE ALSO
+
+.I printf(3)
+
+.SH BUGS
+
+No known bugs.
+
+.SH AUTHOR
+
+Olawale Segun , Damilola Kuteyi
