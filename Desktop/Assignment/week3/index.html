@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Week3 Task 3 (Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!--   Create the following pages using HTML CSS
+
+    Registration page
+    Login page
+    Success register page
+
+Your section of the registration page should include
+
+    First name 
+    Last name
+    Phone number
+    Email 
+    Gender (select field)
+    Date of birth (date selection option)
+    Favorite color (color selector)
+
+Your section of the login page should include
+
+    Email and
+    password
+
+If the user uses the correct format for email and password, the user should be navigated to the success page.
+
+Hint Searching for designs online will give you a better understanding of a beautiful design. -->
+  <p style="margin: 15px;">If you already have an account and you want sign in, <a href="#login">click here</a></p>
+  <section id="reg">
+    <h3>Registration Form</h3>
+    <form action="">
+      <div>
+        <label for="fname"> First Name: </label>
+        <input type="text" name="fname" id="fn" required>
+      </div><br>
+      <div>
+        <label for="lname"> Last Name: </label>
+        <input type="text" name="lname" id="ln" required>
+      </div><br>
+      <div>
+        <label for="phno"> Phone No: </label>
+        <input type="text" name="phno" id="pn" pattern="[0-9](3)[0-9](2)[0-9](3)" placeholder="234-09-642" required>
+      </div><br>
+      <div>
+        <label for="phno"> Email: </label>
+        <input type="text" name="phno" id="em" required>
+      </div><br>
+      <div>
+        <label for="gen">Gender:</label>
+        <select name="gen" id="gend">
+          <option value="male"> Male</option>
+          <option value="female"> Female</option>
+        </select>
+      </div><br>
+      <div>
+        <label for="do"> Date of Birth: </label>
+        <input type="date" name="phno" id="dob" required>
+      </div><br>
+      <div>
+        <label>Favorite Color:</label>
+        <input type="color">
+      </div><br>
+      <div id="sub">
+        <input type="submit" value="submit" id="subsub" href="#login">
+      </div>
+    </form>
+  </section>
+  <section id="log">
+    <h3 id="lgp"> Login Page </h3>
+    <form action="">
+      <div>
+        <label for="email" id="lg"> Email:</label>
+        <input type="email" placeholder="email" id="em2" required>
+      </div><br>
+      <div>
+        <label for="pwd" id="lg"> Password:</label>
+        <input type="password" placeholder="password" id="pd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      </div><br>
+      <div>
+        <input type="submit" value="Login" id="login" required>
+      </div>
+
+    </form>
+  </section>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

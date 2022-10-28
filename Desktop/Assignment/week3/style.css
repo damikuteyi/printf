@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  back
+}
+#reg{
+  background-color: #87f8ea;
+  margin: 50px;
+  padding: 20px;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+h3{
+  text-align: center;
+}
+label {
+  font-weight: bolder;
+}
+#fn {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#ln {
+  margin-left: 13px;
+}
+#pn {
+  margin-left: 18px;
+}
+#em {
+  margin-left: 42px;
+}
+#gend{
+  margin-left: 33px;
+}
+#subsub{
+  margin-left: 6rem;
+}
+
+#log{
+  margin:4rem;
+  background-color: yellowgreen;
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+#lgp{
+  margin-top:rem;
+}
+#em2 {
+  margin-left: 3rem;
+  
+}
+#pd{
+  margin-left: 1.4rem;
+}
+#login{
+  margin-left: 7.2rem;
+}
+#lg{
+  margin-left: 2rem;
+}
